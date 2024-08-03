@@ -1,6 +1,11 @@
 /**
- * @file ItemProgressIntMinMax.h
- * @brief This file contains the declaration of the ItemProgressIntMinMax class.
+ * @file    ItemProgressIntMinMax.h
+ * @brief   This file contains the declaration of the ItemProgressIntMinMax class.
+ *          To use with the LcdMenu library from forntoh
+ *          https://github.com/forntoh/LcdMenu
+ * 
+ *          Version 1.0 by Oberoner21
+ *          03.08.2024
  */
 
 #ifndef ItemProgress_H
@@ -34,16 +39,16 @@ class ItemProgressIntMinMax : public MenuItem
         /**
          * @brief Constructs a new ItemProgressIntMinMax object.
          *
-         * @param key The key of the menu item.
-         * @param measure The measure of the menu item
-         * @param minval The minimal progress value.
-         * @param maxval The maximal progress value.
-         * @param start The starting progress value.
-         * @param stepLength The length of steps to the next position.
-         * @param callback A pointer to the callback function to execute when this menu item is selected.
+         * @param key           The key of the menu item.
+         * @param measure       The measure of the menu item
+         * @param minval        The minimal progress value.
+         * @param maxval        The maximal progress value.
+         * @param start         The starting progress value.
+         * @param stepLength    The length of steps to the next position.
+         * @param callback      A pointer to the callback function to execute when this menu item is selected.
          */
-        ItemProgressIntMinMax(const char *key, const char *measure, uint16_t minval, uint16_t maxval, uint16_t start, uint8_t stepLength,
-                            fptrInt callback)
+        ItemProgressIntMinMax(const char *key, const char *measure, uint16_t minval, uint16_t maxval, uint16_t
+            start, uint8_t stepLength, fptrInt callback)
             : MenuItem(key, MENU_ITEM_PROGRESS),
             callback(callback),
             progress(start),

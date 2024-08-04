@@ -49,9 +49,10 @@ void setup()
 }
 ```
 ### Set menu item value 
-To set the value of the menu item dynamically call:
+To set the value of the menu item dynamically call for example:
 ```
 menu[1]->setProgress(-5);    // set the bass menu item value to -5dB
+menu[3]->setProgress(4);     // set the treble menu item value to 4dB
 menu.update();
 ```
 ### Handle negative values

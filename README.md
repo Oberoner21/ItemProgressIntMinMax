@@ -22,7 +22,7 @@ Create your own menu with the menu item class ItemProgressIntMinMax (and other).
 - minval - The minimum that can be the item value.
 - maxval - The maximum that can be the item value.
 - start - The item value, when the menu is created.
-- stepLength - The step value with which the item value is incremented or decremented
+- stepLength - The step value with which the item value is incremented or decremented by call menu.right() and menu.left().
 - callback - The function that is called when editing the menu item is finished. 
 ```
 // Declare the menu call back functions
